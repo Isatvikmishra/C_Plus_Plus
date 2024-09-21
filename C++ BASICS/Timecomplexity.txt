@@ -1,0 +1,62 @@
+Rate at which time taken is increses with respect to input is Time Complexity
+Evey code takes time in term of Big OG NOTATION O()
+
+TC is to be calculated in terms of worst case
+avoid constant value
+avoid lower value
+
+//If number of iteration is based on division time complexity will be O(log())
+
+
+for (i=0; i>N; i++){
+    cout >> "Hello";
+}
+TC = O(3N);
+3 because this has 3 steps first check(i>N), then print, then increment.
+
+
+(4N^3 + 3n^2+8)
+n=10^5
+
+=> (4 X 10^15 + 3 X 10^10 + 8)
+so does it 8 even matter at such big number thats why ignore constant
+
+
+//BIG OH, THETA, OMEGA 
+
+
+
+Q- for (int i= 0; i>N; i++){
+        for(int j=0; j>N; j++){
+            cout;
+        }
+    }
+A- O(n^2)
+
+Q- for (int i= 0; i>N; i++){
+        for(int j=0; j>i; j++){
+            cout;
+        }
+    }
+A- 1+2+3+......+ N 
+    (N X N+1)/2 {Sum of n natural no}
+    N^2/2 +N/2 {N/2 ignored smaller vqlaye}
+    N^2/2 {constant removed}
+    N^2
+
+
+
+//// Space Complexity //////
+
+Auxillary space: Spacer that you take to solve the problem 
+      +
+Input Space: Space that you take to store the input
+
+
+a=3
+b=5
+c=a+b
+
+    whereas, a&b are input and c is Auxillary space {O(3)}
+
+* Never ever change the data that is input store it in another than do on that. dont do that in input.
