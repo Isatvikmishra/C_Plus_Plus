@@ -26,9 +26,23 @@ int main(){
     }
         
 cout << ans;   
-//    ! O(n)
-    /*
-   
+
+/*
+!can be solved through this approach too. 
+*first calculate the summation of first N natural numbers.(N*(N+1))/2
+
+*   Assume the given array is: {1, 2, 4, 5} and N = 5.
+*   Summation of 1 to 5 = (5*(5+1))/2 = 15
+*   Summation of array elements = 12
+*   So, the difference will be = 15 - 12 = 3. 
+*   And the missing number is also 3.
+
+*/
+
+
+ /*
+
+    ! O(n)
     int missing = arr[0];
     for(int i = 0 ; i < n; i++){
        while(arr[i] != missing){
