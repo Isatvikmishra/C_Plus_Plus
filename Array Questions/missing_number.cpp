@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+    
 /*
 ! XOR Properties
 *-> If we XOR(^) something with zero it will return same number.
@@ -13,16 +14,19 @@ int main(){
 *-> XORing two diff numbers will give nothing.
 ?-> 4 ^ 3 = ?
 
+ !! O(N)
 */
     vector<int> arr = {0,1,3};
     int n = arr.size();
     int ans = 0;
 
-    for(int i = 0; i <= n; i++){
-        ans = ans ^ i;
-    }
-    for(int i = 0; i < n; i++){
-        ans = ans ^ arr[i];
+   /* for(int i = 0; i <= n; i++){
+        ans = ans ^ i; //We want value from arr to store in ans thats why ^ with 0 so can get.
+    }*/
+
+    for(int i = 0; i < n-1; i++){
+        ans = ans ^ i+1; // Pasting this here we optimise it further and removed one for loop.
+        ans = ans ^ arr[i]; //Here ans holds the value from array beacause of prev loop.
     }
         
 cout << ans;   
