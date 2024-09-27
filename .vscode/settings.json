@@ -51,5 +51,6 @@
         "algorithm": "cpp",
         "optional": "cpp",
         "vector": "cpp"
-    }
+    },
+    "workbench.activityBar.location": "default"
 }
