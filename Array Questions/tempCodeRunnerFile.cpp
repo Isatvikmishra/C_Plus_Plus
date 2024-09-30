@@ -1,1 +1,1 @@
-arr.push_back(0);
+n/2
