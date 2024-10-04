@@ -76,7 +76,7 @@ return ans;
 //!Brute Force->>>>>> 
 /*
 
-! first loop: O(n) , second: O(N/2) + O(N/2) ~= O(2N), TC: O(2N)
+! first loop: O(n) , second: O(N/2)  ~= O(N), TC: O(N)
 !Space Complexity:  O(N/2 + N/2) = O(N)
 vector<int> rearrange(vector<int>&arr, int n){
     vector<int> pos;
