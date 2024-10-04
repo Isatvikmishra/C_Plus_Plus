@@ -60,7 +60,7 @@ vector<int> nextPermutation(vector<int> &a, int n){
 }
 
 int main(){
-    vector<int> a = {2,1,5,4,3,0,0};
+    vector<int> a = {3,2,1};
     int n = a.size();
 
     vector<int> ans = nextPermutation(a, n);
