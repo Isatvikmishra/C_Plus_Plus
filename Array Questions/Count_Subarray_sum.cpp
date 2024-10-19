@@ -42,7 +42,6 @@ int countSub(vector<int> arr, int r){
 */
 
 //!TC:  O(N)
-
 int countSub(vector<int> arr, int r){
     int n = arr.size();
     unordered_map<int, int> mpp;
