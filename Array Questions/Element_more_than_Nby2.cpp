@@ -4,8 +4,8 @@ using namespace std;
 
 //! Can be solved using Boyer-Moore Voting Algorithm
 
-/*
-!Using Hashing; O(nLogn)
+
+//!Using Hashing; O(nLogn)
 int findElement(vector<int> &a, int n){
 
     map<int, int>mpp;
@@ -20,7 +20,7 @@ int findElement(vector<int> &a, int n){
         }
     }
 }
-*/
+
 
 
 
