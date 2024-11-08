@@ -76,7 +76,7 @@ Node* deleteMiddle(Node* head){
 
 //! TC: O(n/2)
 Node* deleteMiddle(Node* head){
-    if(head == NULL || head->next == NULL) return head;
+    if(head == NULL || head->next == NULL) return NULL;
     Node* slow = head;
     Node* fast = head;
     fast = head->next->next; // We did this to get slow on one before of middle node so we move fast first before even starting.
@@ -88,8 +88,13 @@ Node* deleteMiddle(Node* head){
         slow = slow->next;
         fast = fast->next->next;
     }
+    //slow is one before the middle and we will link that with middle's next.
+    Node* middle = slow->next;
 
+    //Linking middle left and middle right then delete the middle.
     slow->next = slow->next->next;
+
+    delete(middle);
 
     return head;
 }
