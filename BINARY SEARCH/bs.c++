@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+//! Iterative approach O(logN)
+
 int bsElement(vector<int> &arr, int target){
     int n = arr.size();
     int low = 0, high = n-1;
@@ -15,6 +18,8 @@ int bsElement(vector<int> &arr, int target){
     return -1;
 
 }
+
+
 
 int main(){
     vector<int> arr = {1,4,6,7,2,8,3,9};
