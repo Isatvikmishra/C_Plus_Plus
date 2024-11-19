@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//! TC: O(nlogn)
 int lowerBound(vector<int>arr, int target){
     int n = arr.size();
     int low = 0, high = n-1; 
