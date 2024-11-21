@@ -11,6 +11,7 @@ bool searchRotated(vector<int>& nums, int target) {
 
             if(nums[mid] == target) return true;
 
+            //edge case
             if(nums[low] == nums[mid] && nums[mid] == nums[high]){
                 low = low + 1;
                 high = high - 1;
