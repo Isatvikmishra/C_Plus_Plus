@@ -10,7 +10,7 @@ int singleNonDuplicate(vector<int>& arr){
     if(arr[0] != arr[1]) return arr[0]; //* For First element
     if(arr[n-1] != arr[n-2]) return arr[n-1];   //* For last element
 
-    int low = 1, high = n-1;
+    int low = 1, high = n-2;
     while(low <= high){
         int mid = (low + high)/2;
         
