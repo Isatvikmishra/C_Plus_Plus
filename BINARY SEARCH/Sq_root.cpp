@@ -8,18 +8,18 @@ int sqRoot(int n){
     int low = 1, high = n;
 
     while(low <= high){
-        int mid = (low + high)/2;
+        long long mid = (low + high)/2;
 
-        mid = mid * mid;
+        long long val = mid * mid;
 
-        if(mid <= n){
+        if(val <= n){
             low = mid + 1;
         }
         else    
             high = mid - 1;
- return mid;
     }
-   
+    return high;
+
 }
 
 
