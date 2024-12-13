@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//! We this we can solve array split & painters problem too.
 
 int countStudents(vector<int> arr, int pages){
     int students = 1;
